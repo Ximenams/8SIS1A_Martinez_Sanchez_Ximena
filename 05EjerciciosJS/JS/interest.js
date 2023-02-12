@@ -1,3 +1,4 @@
+//The validation function
 
 function validarn(e){
     var  teclado  =  (document. all)? e. keyCode : e. which;

@@ -47,8 +47,60 @@
                         </tr>
                     </table>
                 </div>
+            <label>Formulario de sueldo base 10% extra por tres ventas 
+                en un mes con total y comisiones </label>
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <td>Ingrese el sueldo base</td>
+                            <td>
+                                <input type="text" name="Sueldo" 
+                                onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la cantidad de la primera venta</td>
+                            <td>
+                                <input type="text" name="venta1" 
+                                onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la cantidad de la segunda venta</td>
+                            <td>
+                                <input type="text" name="venta2" 
+                                onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la cantidad de la tercera venta</td>
+                            <td>
+                                <input type="text" name="venta3" 
+                                onkeypress="return validarn(event)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular comisión"
+                                name="enviar" onclick="comision()" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>El total de comision es de:</td>
+                                <td>
+                                    <input type="text" readonly="readonly"
+                                    class="input_text" name="sueldoI" id="cantidadI" >
+                                </td>
+
+                        </tr>
+                      
+
+                    </table>
+                </div>
         </form>
     </div>
     <script src="JS/interes.js" ></script>
+    
 </body>
 </html>

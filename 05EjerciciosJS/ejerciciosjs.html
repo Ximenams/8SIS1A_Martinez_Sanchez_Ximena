@@ -11,7 +11,7 @@
     <br>
     <div class="container" >
         <form method="get" name="formulario" action="">
-            <label> Formulario para el calculo de inversion de 
+            <label>1-. Formulario para el calculo de inversion de 
                 capital al 2% mensual </label>
                 <div class="table-content" >
                     <table>
@@ -47,7 +47,7 @@
                         </tr>
                     </table>
                 </div>
-            <label>Formulario de sueldo base 10% extra por tres ventas 
+            <label>2-.Formulario de sueldo base 10% extra por tres ventas 
                 en un mes con total y comisiones </label>
                 <div class="table-content">
                     <table>
@@ -90,7 +90,22 @@
                             <td>El total de comision es de:</td>
                                 <td>
                                     <input type="text" readonly="readonly"
-                                    class="input_text" name="sueldoI" id="cantidadI" >
+                                    class="input_text" name="totalComision" id="cantidadI">
+                                </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular total"
+                                name="enviar" onclick="comision()" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>El total que recibe es de:</td>
+                                <td>
+                                    <input type="text" readonly="readonly"
+                                    class="input_text" name="totalPagar" id="cantidadI">
                                 </td>
 
                         </tr>
@@ -98,6 +113,78 @@
 
                     </table>
                 </div>
+            <label>3-.Formulario para el descuento del 15% en una tienda
+                en el total de la compra</label>    
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <td>Ingrese el valor de la compra</td>
+                            <td>
+                                <input type="text" name="descuento" 
+                                onkeypress="return validarn(event)">
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Calcular descuento"
+                                name="enviar" onclick="descuento()" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Debera de pagar:</td>
+                                <td>
+                                    <input type="text" readonly="readonly"
+                                    class="input_text" name="descuen"  >
+                                </td>
+
+                        </tr>
+                    </table>
+                </div>
+                <label>4-.Formulario para saber cuanto sacaras en la
+                    materia de Algoritmos</label>    
+                    <div class="table-content">
+                        <table>
+                            <tr>
+                                <td>Ingrese el promedio de sus tres calificaciones parciales</td>
+                                <td>
+                                    <input type="text" name="promedio" 
+                                    onkeypress="return validarn(event)">
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>Ingrese la calificacion del examen final</td>
+                                <td>
+                                    <input type="text" name="examenFinal" 
+                                    onkeypress="return validarn(event)">
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>Ingrese la calificacion del trabajo final</td>
+                                <td>
+                                    <input type="text" name="trabajoFinal" 
+                                    onkeypress="return validarn(event)">
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="button" value="Calificacion final"
+                                    name="enviar" onclick="calificacion()" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tu calificacion final es de:</td>
+                                    <td>
+                                        <input type="text" readonly="readonly"
+                                        class="input_text" name="calificacion" id="promedio" >
+                                    </td>
+    
+                            </tr>
+                         
+                           
+                        </table>
+                    </div>
         </form>
     </div>
     <script src="JS/interes.js" ></script>

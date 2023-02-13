@@ -1,0 +1,30 @@
+*{
+    padding: 10;
+    background-color: rgb(169, 237, 124);
+    font-family: Helvetica;
+}
+
+h2{
+    border: 2px;
+    color: rgb(36, 7, 77);
+    font-size: 24px;
+    background-color: coral;
+}
+
+button{
+    color: rgb(20, 8, 1);
+    background-color: coral;
+}
+
+image{position: absolute;
+    width: 73px;
+    height: 59px;
+    left: 147px;
+    top: 0px;
+    background: url(https://1.bp.blogspot.com/-krHm_wQ6JjI/VKximE7_qfI/AAAAAAADZHk/cLSAUqS9KJc/s1600/0_135032_fe9019b3_XL.png);
+}
+
+input{
+    color: rgb(20, 8, 1);
+    background-color: rgb(239, 243, 13);
+}

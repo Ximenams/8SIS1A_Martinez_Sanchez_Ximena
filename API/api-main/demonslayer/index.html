@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./css/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <title>Demon Slayer Info</title>
+</head>
+<body>
+    <div class="header shadow p-3">
+        <h2 class="fw-bolder texthead">Demon Slayer wiki</h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 left">
+ 
+          </div>
+          <div class="col-8 center">
+            <div class="container-fluid pt-5">
+                <h1>Información de Personajes</h1>
+                <div class="form-control bg-transparent text-light">
+                    <span>En esta sección puede buscar a algún personaje de Demon Slayer: Kimetsu no Yaiba y mostrara la información relacionada con el personaje</span>
+                    <div class="d-flex justify-content-end">
+                      <form class="mt-5 mb-5" id="buscapersonaje">
+                        <label for="personaje">Ingrese un personaje</label>
+                        <br>
+                        <input type="text" name="personaje" id="personaje" placeholder="Personaje">
+                        <button type="submit" class="btn btn-info text-dark text-">Buscar</button>
+                    </form>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center align-content-center">
+                      <div class="card mb-3 text-bg-dark" id="resultados" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="..."  id="imagen" class="img-fluid rounded-start imagen" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body mb-2">
+                              <h4 class="card-title  mb-2" id="nombre">Nombre:</h4>
+                              <h5 class="card-subtitle mb-2" id="alias">Alias:</h5>
+                              <h6 class="card-subtitle mb-2" id="familia">Familia:</h6>
+                              <h6 class="card-subtitle mb-2" id="edad">Edad:</h6>
+                              <h6 class="card-subtitle mb-2" id="genero">Genero:</h6>
+                              <h6 class="card-subtitle mb-2" id="especie">Especie:</h6>
+                              <h6 class="card-subtitle mb-2" id="afiliacion">Afiliacion:</h6>
+                              <h6 class="card-subtitle mb-2" id="ocupacion">Ocupación:</h6>
+                              <h6 class="card-subtitle mb-2" id="estilocombate">Estilo de Combate:</h6>
+                              <p>Mas información en: <i class="fa fa-link" aria-hidden="true"><a href="https://kimetsu-no-yaiba.fandom.com/es/wiki/Kimetsu_no_Yaiba_Wiki">Aqui</a></i> </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+
+          </div>
+          <div class="col-2 rigth">
+          </div>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
